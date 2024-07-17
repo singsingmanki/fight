@@ -61,7 +61,7 @@ if(me.hp>0 && enemy.hp >0){
 
     let para0 = document.createElement("div");
     
-    para0.classList.add("my");
+    para0.classList.add("me");
 
     para0.innerText = "Round " + round
 
@@ -125,4 +125,5 @@ if(me.hp>0 && enemy.hp >0){
     document.getElementById("heading").appendChild(para0)
 round++
 }}
+
 
