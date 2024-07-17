@@ -1,12 +1,14 @@
 #heading{
 
-  text-align: center;
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
   padding: 50px 0px 50px 0px;
+  
 }
 #pokemon{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 20px;
 
 }
 
@@ -51,5 +53,30 @@
   }
 
   body{
-    background-color:blanchedalmond;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/dfpmnhd-e857780a-85c2-48de-8b8e-e124fa5ba065.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGZwbW5oZC1lODU3NzgwYS04NWMyLTQ4ZGUtOGI4ZS1lMTI0ZmE1YmEwNjUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.jDtR9_yEuPTD9VoTr5Mhot7vHwE03Poyr-RfaP0ibKU);
+    background-size: cover;
+  }
+
+  .my{
+    padding: 10px;
+    border-radius: 10px;
+    color:darkred;
+    background-color: lightblue;
+    font-size: 20px;
+  }
+
+  .me{
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-size: 30px;
+  }
+
+  #mybutton,#mybutton1{
+    background-color:burlywood;
+    font-size: 15px;
+    width: 80px;
+    height: 50px;
   }
