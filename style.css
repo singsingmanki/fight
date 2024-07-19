@@ -57,13 +57,7 @@
     background-size: cover;
   }
 
-  .my{
-    padding: 10px;
-    border-radius: 10px;
-    color:darkred;
-    background-color: lightblue;
-    font-size: 20px;
-  }
+
 
   .me{
     text-align: center;
@@ -80,3 +74,12 @@
     width: 80px;
     height: 50px;
   }
+
+.my1,.my2{
+    padding: 10px;
+    border-radius: 10px;
+    color:darkred;
+    background-color: lightblue;
+    font-size: 20px;
+  }
+
