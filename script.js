@@ -34,8 +34,8 @@ element1.addEventListener("click", myFunction1);
 
 function myFunction1() {
     round = 1
-      document.getElementById("1").innerText = ""
-        document.getElementById("2").innerText = ""
+      document.querySelector(".my1").innerText = "Your hp: 100/100" 
+        document.querySelector(".my2").innerText = "Enemy hp: 100/100"
     me.hp = 100
     enemy.hp = 100
 }
@@ -67,7 +67,7 @@ if(me.hp>0 && enemy.hp >0){
 
     if(round%2 !== 0){
 
-    document.getElementById("2").innerText = ""
+    document.getElementById("mon2").innerText = ""
 
     Img1.style.display = "block";
     setTimeout(hide, 800);
@@ -75,7 +75,7 @@ if(me.hp>0 && enemy.hp >0){
 
     let para2 = document.createElement("div");
 
-    para2.classList.add("my");
+    para2.classList.add("my2");
 
     enemy.hp = enemy.hp - me.damage  + enemy.defense
 
@@ -92,10 +92,10 @@ if(me.hp>0 && enemy.hp >0){
     }
 
 
-    document.getElementById("2").appendChild(para2)
+    document.getElementById("mon2").appendChild(para2)
 
     } else{
-        document.getElementById("1").innerText = ""
+        document.getElementById("mon1").innerText = ""
 
         Img2.style.display = "block";
         setTimeout(hide, 800);
@@ -103,7 +103,7 @@ if(me.hp>0 && enemy.hp >0){
 
         let para1 = document.createElement("div");
     
-        para1.classList.add("my");
+        para1.classList.add("my1");
     
         me.hp = me.hp - enemy.damage + me.defense
     
@@ -119,11 +119,17 @@ if(me.hp>0 && enemy.hp >0){
         }
     
     
-        document.getElementById("1").appendChild(para1)
+        document.getElementById("mon1").appendChild(para1)
 
     }
     document.getElementById("heading").appendChild(para0)
 round++
 }}
+
+
+
+
+
+
 
 
